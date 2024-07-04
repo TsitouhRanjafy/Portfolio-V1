@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../Font/framd.ttf"); }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #3f73e3;
+  border-radius: 10px; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #0d1937; }
+  body header {
+    position: sticky;
+    height: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    body header h1 {
+      font-family: "inter";
+      font-size: 24px;
+      letter-spacing: 2px;
+      font-weight: 500;
+      color: #cacaca; }
+  body section.home {
+    display: flex;
+    flex-direction: row; }
+    body section.home div.list {
+      width: 25vw;
+      height: 90vh;
+      box-sizing: border-box;
+      overflow-y: scroll; }
+      body section.home div.list span {
+        display: none; }
+      body section.home div.list .message {
+        padding: 2px;
+        cursor: pointer; }
+        body section.home div.list .message:hover {
+          background: #182643; }
+        body section.home div.list .message h3 {
+          max-height: 20px;
+          padding: 0 3px;
+          overflow: hidden;
+          color: #cacaca;
+          font-family: "inter" ,sans-serif;
+          letter-spacing: 2px;
+          font-weight: 500;
+          margin-bottom: 5px; }
+        body section.home div.list .message p.preview {
+          max-height: 13px;
+          padding: 0 3px;
+          overflow: hidden;
+          font-family: "inter";
+          font-weight: 400;
+          color: #3f73e3;
+          font-size: 13px;
+          margin-top: 0px; }
+    body section.home div.view {
+      width: 75vw;
+      height: 90vh;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      body section.home div.view p.vide {
+        color: #3f73e3;
+        font-family: "inter",sans-serif;
+        font-size: 50px;
+        opacity: 0.3; }
+        body section.home div.view p.vide.cacher {
+          display: none; }
+      body section.home div.view div.affiche-message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        gap: 15px; }
+        body section.home div.view div.affiche-message.cacher {
+          display: none; }
+        body section.home div.view div.affiche-message label {
+          font-family: "inter",sans-serif;
+          color: #cacaca; }
+        body section.home div.view div.affiche-message input {
+          width: 80%;
+          height: 8%;
+          background: #182643;
+          border: none;
+          color: #cacaca;
+          font-size: 13px;
+          padding: 0 10px; }
+        body section.home div.view div.affiche-message textarea {
+          width: 80%;
+          height: 20%;
+          background: #182643;
+          border: none;
+          resize: none; }
